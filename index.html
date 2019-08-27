@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+        [data-role=page] {
+            height: 100% !important;
+            position: relative !important;
+        }
+
+        [data-role=footer] {
+            bottom: 0;
+            position: absolute !important;
+            top: auto !important;
+            width: 100%;
+        }
+        .album{
+
+            height:70px;
+
+        }
+
+        #Pets {
+            height: 200px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+   
+        #logo {
+            height:250px;
+        }
+        .ui-page .ui-header {
+            background: #00baa6 !important;
+        }
+            .ui-page .ui-header h1 {
+                color: #065f55;
+            }
+
+            .ui-page .ui-footer {
+                background: #00baa6 !important;
+            }
+                .ui-page .ui-footer h1 {
+                    color: #065f55;
+                }
+
+    </style>
+
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+
+
+    <!--   index   -->
+    <div data-role="page" class="index" id="index">
+
+
+
+        <div data-role="header">
+            <h1>Pets</h1>
+
+            <a href="#" class="ui-btn-right ui-corner-all ui-shadow ui-btn-icon-left ui-icon-gear">Button</a>
+
+        </div>
+
+        <div data-role="navbar" class="ui-navbar" role="navigation">
+            <ul class="ui-grid-b">
+                <li class="ui-block-a">
+                    <a href="#pictures" class="ui-link ui-btn"> Pictures </a>
+                </li>
+                <li class="ui-block-b">
+                    <a href="#lists" class="ui-link ui-btn">Lists </a>
+                </li>
+                <li class="ui-block-c">
+                    <a href="#info" class="ui-link ui-btn">Info </a>
+                </li>
+            </ul>
+        </div>
+
+        <center>
+            <img src="img/Pets.png" id="logo" />
+        </center>
+
+
+        <ul data-role="listview" data-split-icon="gear" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shdow">
+
+            <li class=" ui-li-has-tumb ui-first-child">
+                <a href="#pictures" class="ui-btn">
+                    <img src="img/pic1.png" />
+                    <h2>Pictures</h2>
+                    <p>pictures of our pets</p>
+                </a>
+            </li>
+            <li class=" ui-li-has-tumb">
+                <a href="#lists" class="ui-btn">
+                    <img src="img/pic2.png" />
+                    <h2>Lists</h2>
+                    <p>any list you want</p>
+                </a>
+            </li>
+            <li class=" ui-li-has-tumb ui-last-child">
+                <a href="#info" class="ui-btn">
+                    <img src="img/pic3.png" />
+                    <h2>Info</h2>
+                    <p>information about our pets</p>
+                </a>
+            </li>
+        </ul>
+
+        <div data-role="footer">
+            <h1>Nir Hadad &copy; Pets</h1>
+        </div>
+    </div>
+
+    <!--   pictures   -->
+    <div data-role="page" id="pictures">
+        <div data-role="header">
+            <h1>Pictures</h1>
+
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+        </div>
+
+
+
+        <div class="ui-grid-b">
+            <a href="#pp1">  <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:80px"><img class="album" src="img/1.jpg" /> </div></div></a>
+            <a href="#pp2"><div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:80px"><img class="album" src="img/2.jpg" /></div></div></a>
+            <a href="#pp3"> <div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:80px"><img class="album" src="img/3.jpg" /></div></div></a>
+            <a href="#pp4">  <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:80px"><img class="album" src="img/4.jpg" /></div></div></a>
+            <a href="#pp5"> <div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:80px"><img class="album" src="img/5.jpg" /></div></div></a>
+            <a href="#pp6"> <div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:80px"><img class="album" src="img/6.jpg" /></div></div></a>
+            <a href="#pp7"> <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:80px"><img class="album" src="img/7.jpg" /></div></div></a>
+            <a href="#pp8"> <div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:80px"><img class="album" src="img/8.jpg" /></div></div></a>
+            <a href="#pp9"> <div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:80px"><img class="album" src="img/9.jpg" /></div></div></a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div data-role="footer">
+            <h1>Nir Hadad &copy; Pets</h1>
+        </div>
+
+    </div>
+
+
+    <div data-role="dialog" id="pp1">
+        <div data-role="header">
+            <h1>photo</h1>
+
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+            <img  src="img/1.jpg" />
+        </div>
+
+    </div>
+
+    <div data-role="dialog" id="pp2">
+        <div data-role="header">
+            <h1>photo</h1>
+
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+            <img src="img/2.jpg" />
+        </div>
+    </div>
+
+    <div data-role="dialog" id="pp3">
+        <div data-role="header">
+            <h1>photo</h1>
+
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+            <img src="img/3.jpg" />
+        </div>
+
+
+    </div>
+
+    <div data-role="dialog" id="pp4">
+        <div data-role="header">
+            <h1>photo</h1>
+
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+            <img src="img/4.jpg" />
+        </div>
+
+    </div>
+
+    <div data-role="dialog" id="pp5">
+        <div data-role="header">
+            <h1>photo</h1>
+
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+            <img src="img/5.jpg" />
+        </div>
+
+    </div>
+
+    <div data-role="dialog" id="pp6">
+        <div data-role="header">
+            <h1>photo</h1>
+
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+            <img src="img/6.jpg" />
+        </div>
+
+    </div>
+
+    <div data-role="dialog" id="pp7">
+        <div data-role="header">
+            <h1>photo</h1>
+
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+            <img src="img/7.jpg" />
+        </div>
+
+    </div>
+
+    <div data-role="dialog" id="pp8">
+        <div data-role="header">
+            <h1>photo</h1>
+
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+            <img src="img/8.jpg" />
+        </div>
+
+    </div>
+
+    <div data-role="dialog" id="pp9">
+        <div data-role="header">
+            <h1>photo</h1>
+
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+            <img src="img/9.jpg" />
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!--   lists   -->
+    <div data-role="page" id="lists">
+        <div data-role="header">
+            <h1>Lists</h1>
+
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+        </div>
+
+
+        <fieldset data-role="controlgroup">
+            <legend>our kinds of pets:</legend>
+            <input type="checkbox" name="checkbox-1a" id="checkbox-1a" checked="">
+            <label for="checkbox-1a">Cats</label>
+            <input type="checkbox" name="checkbox-2a" id="checkbox-2a">
+            <label for="checkbox-2a">Birds</label>
+            <input type="checkbox" name="checkbox-3a" id="checkbox-3a">
+            <label for="checkbox-3a">Dogs</label>
+            <input type="checkbox" name="checkbox-4a" id="checkbox-4a">
+            <label for="checkbox-4a">Ducks</label>
+            <input type="checkbox" name="checkbox-5a" id="checkbox-5a">
+            <label for="checkbox-5a">Fish</label>
+            <input type="checkbox" name="checkbox-6a" id="checkbox-6a">
+            <label for="checkbox-6a">Hamsters</label>
+            <input type="checkbox" name="checkbox-7a" id="checkbox-7a">
+            <label for="checkbox-7a">Lizards</label>
+        </fieldset>
+
+
+
+        <div data-role="footer">
+            <h1>Nir Hadad &copy; Pets</h1>
+        </div>
+
+    </div>
+
+    <!--   info   -->
+    <div data-role="page" id="info">
+        <div data-role="header">
+            <h1>Info</h1>
+
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+        </div>
+
+        <div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+                <h1>Our Company</h1>
+                <div>
+                    We are the UK’s leading pet care business, providing pet owners with everything they need to be able to look after their pet – from food, toys and bedding, and grooming services, right the way through to first opinion veterinary care and world class specialist veterinary hospitals.
+
+                    Our stores represent a unique environment and provide a practical, fun and unique experience for pet owners. We’ll help owners select the right food for their pet with nutrition consultations, help test the water is safe for their fish tank before new fish are introduced, and help socialise a new puppy with socilaisation and training classes - and much more. We’re also online and our customers can order their pet products for home delivery or collect in store.
+                </div>
+            </div>
+            <div data-role="collapsible">
+                <h1>our animals</h1>
+                <div>
+                    alligators, crocodiles, lizards, and snakes; aquatic pets, such as fish, freshwater and saltwater snails, and frogs; and arthropod pets, such as tarantulas and hermit crabs. Small pets may be grouped together as pocket pets, while the equine and bovine group include the largest companion animals.
+                    Pets provide their owners (or "guardians"[1]) both physical and emotional benefits. Walking a dog can provide both the human and the dog with exercise, fresh air, and social interaction. Pets can give companionship to people who are living alone or elderly adults who do not have adequate social interaction with other people. There is a
+                </div>
+            </div>
+            <div data-role="collapsible">
+                <h1>how we see the future</h1>
+                <div>people. There is a medically approved class of therapy animals, mostly dogs or cats, that are brought to visit confined humans, such as children in hospitals or elders in nursing homes. Pet therapy utilizes trained animals and handlers to achieve specific physical, social, cognitive or emotional goals with patients.</div>
+            </div>
+            <div data-role="collapsible">
+                <h1>ower peapols</h1>
+                <div>people. There is a medically approved class of therapy animals, mostly dogs or cats, that are brought to visit confined humans, such as children in hospitals or elders in nursing homes. Pet therapy utilizes trained animals and handlers to achieve specific physical, social, cognitive or emotional goals with patients.</div>
+            </div>
+        </div>
+
+        <div data-role="footer">
+            <h1>Nir Hadad &copy; Pets</h1>
+        </div>
+
+    </div>
+
+
+</body>
+    </html>
